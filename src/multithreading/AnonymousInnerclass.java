@@ -2,23 +2,22 @@ package multithreading;
 
 public class AnonymousInnerclass {
     public static void main(String[] args) {
+        MyInterface obj = new MyInterface() {
+            @Override
+            public Integer add(int a, int b) {
+                return a+b;
+            }
 
-    MyInterface obj = new MyInterface() {
-        @Override
-        public Integer add(int a, int b) {
-            return a + b;
-        }
+            @Override
+            public Integer sub(int a, int b) {
+                return a-b;
+            }
+        };
+        System.out.println("Addition -> "+obj.add(2,5));
+        System.out.println("Subtraction -> "+obj.sub(6,4));
 
-        @Override
-        public Integer sub(int a, int b) {
-            return a - b;
-        }
-    };
-        System.out.println(obj.add(2,3));
-        System.out.println(obj.sub(5,3));
 
-}
-
+    }
 }
 interface MyInterface{
     Integer add(int a, int b);
