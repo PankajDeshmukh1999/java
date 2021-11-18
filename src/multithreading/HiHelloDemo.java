@@ -2,11 +2,10 @@ package multithreading;
 
 public class HiHelloDemo {
 
-    public static void main(String[] args) {      //Another way for essy to  code
+    public static void main(String[] args) throws InterruptedException {      //Another way for essy to  code
 
-       Thread  t1 = new Thread(new Runnable() {
-           @Override
-           public void run() {
+       Thread  t1 = new Thread(() ->{
+
             for (int i = 1; i<=5; i++){
                    System.out.println("Hi");
                 try {
@@ -15,11 +14,10 @@ public class HiHelloDemo {
                     e.printStackTrace();
                 }
             }
-           }
+
        });
-       Thread t2 = new Thread(new Runnable() {
-           @Override
-           public void run() {
+       Thread t2 = new Thread(() -> {
+
              for (int i = 1; i <= 5; i++){
                  System.out.println("Hello");
                  try {
@@ -28,10 +26,14 @@ public class HiHelloDemo {
                      e.printStackTrace();
                  }
              }
-           }
+
        });
        t1.start();
        t2.start();
+
+       t1.join();
+       t2.join();
+        System.out.println("Exit");
 
     }
 }

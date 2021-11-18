@@ -14,12 +14,11 @@ public class Factorial {
 //        }
 //        System.out.println("Factorial of " +number+ "is "+fact);
 
-        int i,fact,num;
+        int i,fact=1,num;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Number");
         num= scanner.nextInt();
-        System.out.println("Enter fact");
-        fact = scanner.nextInt();
+
 
         for (i=1;i<=num;i++){
             fact = fact*i;

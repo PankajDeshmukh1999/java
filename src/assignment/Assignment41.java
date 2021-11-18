@@ -19,6 +19,16 @@ public class Assignment41 {
                 System.out.print(i + " ");
             }
         }
+        int num=100;
+        int temp = 0;
+        for(int i = 1; i  <= 100; i++){
+            if (num % i == 0) {
+                temp= temp+1;
+            }
+        }
+        if (temp == 0){
+            System.out.println("\nPrime number:");
+        }
 
     }
 
