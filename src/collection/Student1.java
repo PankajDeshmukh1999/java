@@ -19,8 +19,7 @@ public class Student1 {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+
         Student1 student1 = (Student1) o;
         return id == student1.id && Objects.equals(name, student1.name) && Objects.equals(address, student1.address);
     }
@@ -33,7 +32,7 @@ public class Student1 {
     public static void main(String[] args) {
         Student1 student1 = new Student1(1,"Pankaj","sangli");  //hashcode
         Student1 student2 = new Student1(1,"Pankaj","sangli");
-        Student1 student3 = new Student1(1,"Pankaj","sangli");
+        Student1 student3 = new Student1(2,"Pankaj","sangli");
 
         Set<Student1> set = new HashSet<>();
         set.add(student1);
