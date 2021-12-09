@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class PreparedStatementDemo {
+public class PreparedStatementDemo { //passing dynamically
     public static void main(String[] args) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");    //registering driver

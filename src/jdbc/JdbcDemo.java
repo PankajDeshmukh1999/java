@@ -15,13 +15,13 @@ public class JdbcDemo {
             Statement statement = connection.createStatement();
 
             String insert = "insert into employee(id,address,name) values (1,'pune','rahul')";
-            String update = "update employee set name='Uday' where id =1";
+            String update = "update employee set name='Uday' where id =9";
 
             String delete = "delete from employee where name ='Uday'";
 
 //            int i = statement.executeUpdate(insert);
-//            int i = statement.executeUpdate(update);
-            int i = statement.executeUpdate(delete);
+            int i = statement.executeUpdate(update);
+//            int i = statement.executeUpdate(delete);
 
             System.out.println("row inserted-> "+i);
         } catch (ClassNotFoundException | SQLException e) {
