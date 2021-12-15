@@ -17,6 +17,8 @@ public class StreamApi {
 
         list1.forEach(System.out::println);
 
+        //
+
         List<String> list2 = Arrays.asList("java", "is","Programming","language");
 
         Function<String,String> function = s-> s.toUpperCase();
