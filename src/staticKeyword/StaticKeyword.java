@@ -7,7 +7,7 @@ public class StaticKeyword {
     static String companyName = "TCS";              //use static bez All emp works in tcs
 
     public static void display(){
-        System.out.println("In display function");
+        System.out.println(" In display function ");
     }
 
     public StaticKeyword(int empId, String empName){
@@ -23,5 +23,3 @@ public class StaticKeyword {
     }
 
 }
-
-

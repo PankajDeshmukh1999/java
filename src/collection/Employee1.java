@@ -1,8 +1,6 @@
 package collection;
 
-import java.util.ArrayList;
-
-import java.util.List;
+import java.util.*;
 
 public class Employee1 {
     int id ;

@@ -17,8 +17,8 @@ public class SetDemo {
         set1.add(20);
         set1.add(70);
 
-//        set1.containsAll(set);
-//        System.out.println(set1);
+        set1.containsAll(set);
+        System.out.println(set1);
 
         Set<Integer> set2 = new TreeSet<>();
         set2.add(40);

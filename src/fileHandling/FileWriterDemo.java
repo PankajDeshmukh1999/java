@@ -9,12 +9,12 @@ public class FileWriterDemo {
 
         try {
             FileWriter fileWriter = new FileWriter("C:\\Users\\LENOVO\\IdeaProjects\\pankaj\\src\\fileHandling\\fileWriterTest.txt");
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+//            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
-            fileWriter.write("Today us thursday");
+            fileWriter.write("Today is Sunday");
             System.out.println("File write successfully");
 
-            bufferedWriter.close();
+//            bufferedWriter.close();
             fileWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -22,15 +22,15 @@ public class FileWriterDemo {
 
         try {
             FileReader fileReader = new FileReader("C:\\Users\\LENOVO\\IdeaProjects\\pankaj\\src\\fileHandling\\fileWriterTest.txt");
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
+//            BufferedReader bufferedReader = new BufferedReader(fileReader);
 
-
+            System.out.println("File read successfully");
             int i = fileReader.read();
             while ( i > 0){
                 System.out.print((char) i);
                 i = fileReader.read();
             }
-            bufferedReader.close();
+//            bufferedReader.close();
             fileReader.close();
         } catch (IOException e) {
             e.printStackTrace();

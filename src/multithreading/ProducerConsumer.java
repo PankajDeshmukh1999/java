@@ -1,11 +1,11 @@
 package multithreading;
 
-public class ProducerConsumer {     //interThread communication
+public class ProducerConsumer {     //InterThread communication
     int num;
 
     boolean flag = true;
 
-    public synchronized void set(int num){
+    public synchronized void set(int num){      // synchronized helps to achieve communication between threads
         if (!flag){
             try {
                 wait();
@@ -16,7 +16,7 @@ public class ProducerConsumer {     //interThread communication
         System.out.println("set:"+num);
         this.num = num;
         flag = false;
-        notify();
+        notify();           //notify to all thread
     }
     public synchronized void get(){
         if (flag){
@@ -34,7 +34,7 @@ public class ProducerConsumer {     //interThread communication
 
 }
 class Producer implements Runnable{
-    ProducerConsumer producerConsumer;     //object variable
+    ProducerConsumer producerConsumer;     //reference variable
 
     public Producer(ProducerConsumer producerConsumer){  //constructor
         this.producerConsumer = producerConsumer;

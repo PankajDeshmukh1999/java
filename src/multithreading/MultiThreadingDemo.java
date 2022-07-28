@@ -36,7 +36,10 @@ class Main{
         obj.start();                        //because multiThreading
 
         Hello hello = new Hello();
-        Thread t1 = new Thread(hello);      //Runnable
+        Thread t1 = new Thread(hello);
+        //Runnable
+        t1.run();
+        t1.run();
         t1.start();
     }
 }

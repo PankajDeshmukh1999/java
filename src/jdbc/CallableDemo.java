@@ -7,7 +7,7 @@ public class CallableDemo {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");    //registering driver
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/pankaj","Pankaj","Pankajd@1999");
-
+            //pass dynamic value to
             CallableStatement callableStatement = connection.prepareCall("call getData()");
 
             ResultSet rs = callableStatement.executeQuery();

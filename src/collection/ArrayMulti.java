@@ -5,14 +5,14 @@ public class ArrayMulti {
         int arr[]  = {1,2,3,4};
         int arr1[] = {5,6,7,8};
 
-//       for (int i=0; i<arr.length;i++){
-//           arr[i] = arr[i]*arr1[i];
-//           System.out.println(arr[i]+ " ");
-//       }
-        for (int i=arr.length-1; i>=0;i--){
-            arr[i] = arr[i]*arr1[i];
-            System.out.println(arr[i]+ " ");
+        for(int i=0; i< arr.length;i++){
+            arr[i]= arr[i]* arr1[i];
+            System.out.println(arr[i]);
         }
+//        for (int i=arr.length-1; i>=0;i--){
+//            arr[i] = arr[i]*arr1[i];
+//            System.out.println(arr[i]+ " ");
+//        }
 
 
 

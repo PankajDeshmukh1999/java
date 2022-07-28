@@ -18,7 +18,7 @@ public class LinkedListDemo {
         System.out.println(list.indexOf(10));// check the index of element
         System.out.println(list.size());
         System.out.println(list.get(1));
-        System.out.println(list.set(3,50));
+        System.out.println(list.set(2,50));
 
     }
 }

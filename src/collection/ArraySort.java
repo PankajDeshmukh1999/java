@@ -18,10 +18,13 @@ public class ArraySort {
         }
 
         List<Integer> list1 = new ArrayList<>();
-        list1.add(1);
+        list1.add(6);
         list1.add(2);
         list1.add(3);
 
         Collections.sort(list1);
+        for (Integer i: list1){
+            System.out.println(i);
+        }
     }
 }

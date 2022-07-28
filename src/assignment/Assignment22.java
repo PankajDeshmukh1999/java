@@ -16,7 +16,7 @@ public class Assignment22 {
         }else if (ch>='a' && ch<='z'){
             System.out.println("Lowercase alphabet:");
         }else{
-            System.out.println("Enter value is not alphabet");
+            System.out.println("Entered value is not alphabet");
         }
 
     }

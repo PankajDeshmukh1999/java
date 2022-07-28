@@ -12,7 +12,7 @@ public class Assignment5 {
         days= scanner.nextInt();
 
         year= days/365;
-        week = (days/365)%7;
+        week = year%7;
         day = (days%365)%7;
 
         System.out.println("year" +year);

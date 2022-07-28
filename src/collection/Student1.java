@@ -14,7 +14,6 @@ public class Student1 {
         this.name = name;
         this.address = address;
 
-//        System.out.println("ID->"+id+ " Name->"+name+ " Address->"+address);
     }
 
     @Override

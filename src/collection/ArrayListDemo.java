@@ -15,7 +15,7 @@ public class ArrayListDemo {
         list.add(40);
 
         System.out.println(list);
-        System.out.println(list.contains(40));
+        System.out.println(list.contains(40)); //return boolean value
 //        System.out.println(list.remove(3)); remove
         System.out.println(list.indexOf(10));// check the index of element
         System.out.println(list.size());

@@ -3,8 +3,10 @@ package multithreading;
 public class SynchronizationDemo {
    int num;
 
-   public synchronized void increase(){
-       num++;
+   public  void increase(){
+       synchronized (this) {            //synchronized block
+           num++;
+       }
    }
 
     public static void main(String[] args) throws InterruptedException {

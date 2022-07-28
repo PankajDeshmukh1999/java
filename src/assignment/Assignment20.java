@@ -14,7 +14,7 @@ public class Assignment20 {
         num2= scanner.nextInt();
 
         if (num1>num2){
-            System.out.println("num1 id maximum "+" num2 is minimum");
+            System.out.println("num1 is maximum "+" num2 is minimum");
         }else if (num1<num2){
             System.out.println("num2 is maximum "+ " and "+" num1 is minimum");
         }else{

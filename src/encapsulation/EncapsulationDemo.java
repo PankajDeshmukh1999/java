@@ -6,11 +6,8 @@ public class EncapsulationDemo {
     private String address;
 
    public void setId(int id){
-       if (id>0){
        this.id =id;
-   }else {
-       System.out.println("Enter value above 0");
-       }
+
    }
 
     public int getId() {
